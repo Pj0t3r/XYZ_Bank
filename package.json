@@ -16,5 +16,5 @@
 	"preinstall":"npm cache clear --force",
 	"test": "cd test && protractor conf.js",
 	"posttest":"rmdir node_modules"
-  },
+  }
 }

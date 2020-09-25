@@ -14,14 +14,7 @@
   },
   "scripts": {
 	"preinstall":"npm cache clear --force",
-	"test": "cd test/config && protractor conf.js",
+	"test": "cd test && protractor conf.js",
 	"posttest":"rmdir node_modules"
   },
-  "keywords": [
-    "cherchertech",
-    "package",
-    "tutorial",
-    "protractor"
-  ],
-  "author": "pmazek",
 }

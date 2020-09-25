@@ -14,6 +14,6 @@
   },
   "scripts": {
 	"preinstall":"npm cache clear --force",
-	"test": "cd test/config && protractor conf.js",
+	"test": "cd test/config && protractor conf.js"
   }
 }

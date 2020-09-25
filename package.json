@@ -13,7 +13,7 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-	"preinstall":"npm cache clear",
+	"preinstall":"npm cache clear --force",
 	"postinstall":"tsc",
 	"test": "protractor conf.js",
 	"posttest":"rmdir node_modules"

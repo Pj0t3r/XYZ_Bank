@@ -14,7 +14,6 @@
   },
   "scripts": {
 	"preinstall":"npm cache clear --force",
-	"postinstall":"tsc",
 	"test": "protractor conf.js",
 	"posttest":"rmdir node_modules"
   },

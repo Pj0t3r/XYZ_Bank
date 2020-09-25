@@ -14,7 +14,7 @@
   },
   "scripts": {
 	"preinstall":"npm cache clear --force",
-	"test": "protractor conf.js",
+	"test": "cd test/config && protractor conf.js",
 	"posttest":"rmdir node_modules"
   },
   "keywords": [
@@ -23,6 +23,5 @@
     "tutorial",
     "protractor"
   ],
-  "author": "karthiq",
-  "license": "ISC"
+  "author": "pmazek",
 }

@@ -1,0 +1,29 @@
+{
+  "name": "XYZ_Bank",
+  "version": "1.0.0",
+  "description": "Autotests",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "jasmine": "^3.6.1",
+    "protractor": "^7.0.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+	"preinstall":"npm cache clear",
+	"postinstall":"tsc",
+	"test": "protractor conf.js",
+	"posttest":"rmdir node_modules"
+  },
+  "keywords": [
+    "cherchertech",
+    "package",
+    "tutorial",
+    "protractor"
+  ],
+  "author": "karthiq",
+  "license": "ISC"
+}

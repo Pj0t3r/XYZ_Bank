@@ -7,7 +7,12 @@ exports.config = {
 	  jasmine.getEnv().addReporter(new HtmlReporter({
 		  baseDirectory: '../testReports/e2e', 
 		  takeScreenShotsOnlyForFailedSpecs: true,
-		  docTitle: 'Report'
+		  docTitle: 'Report',
+		  clientDefaults:{
+                showTotalDurationIn: "belowHeader",
+                totalDurationFormat: "h:m:s",
+                gatherBrowserLogs: true
+              }
 	  }).getJasmine2Reporter());
   },
     multiCapabilities: [{

@@ -9,9 +9,7 @@ describe('XYZ Bank main page', function() {
   });
 	
   it('should allow to login as customer', function() {
-    bankHomepage.loginAsCustomer();
-	bankHomepage.selectYourName('Harry Potter');
-	bankHomepage.clickLoginButton();
+    bankHomepage.loginAsCustomer('Harry Potter');
     expect(customerPage.getUserLoggedInName()).toEqual('Welcome Harry Potter !!');
   });
   it('should allow to login as manager', function() {

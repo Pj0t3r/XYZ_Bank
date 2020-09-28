@@ -7,11 +7,7 @@ var Homepage = function() {
 	this.get = function(){
 		browser.get('http://www.way2automation.com/angularjs-protractor/banking/');
 	};
-	
-	this.loginAsCustomer = function(){
-		customerLoginButton.click();
-	};
-	
+		
 	this.loginAsManager = function(){
 		bankManagerLoginButton.click();
 	};
@@ -24,5 +20,12 @@ var Homepage = function() {
 	this.clickLoginButton = function(){
 		loginButton.click();
 	}
+	
+	this.loginAsCustomer = function(customerName){
+		console.log('Customer name: ' + customerName);
+		customerLoginButton.click();
+		this.selectYourName(customerName);
+		this.clickLoginButton();
+	};
 };
 module.exports = new Homepage();

@@ -17,6 +17,9 @@ exports.config = {
   }, {
     browserName: 'chrome',
 	shardTestFiles: false,
-    maxInstances: 5
+    maxInstances: 5,
+	chromeOptions: {
+		args: ['--headless','--disable-gpu']
+	}
   }]
 }

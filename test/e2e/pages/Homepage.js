@@ -22,7 +22,6 @@ var Homepage = function() {
 	}
 	
 	this.loginAsCustomer = function(customerName){
-		console.log('Customer name: ' + customerName);
 		customerLoginButton.click();
 		this.selectYourName(customerName);
 		this.clickLoginButton();
